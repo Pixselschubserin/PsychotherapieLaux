@@ -14,7 +14,7 @@
     <nav>
         <ul>
             <li><a href="#ueber-mich">Über mich</a></li>
-	<li><a href="#Galerie">Galerie</a></li>
+            <li><a href="#galerie">Galerie</a></li>
             <li><a href="#therapie">Therapieangebot</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
             <li><a href="#anfahrt">Anfahrt</a></li>
@@ -25,14 +25,22 @@
         <h2>Über mich</h2>
         <p>Hier könnte ein Bild der Therapeutin sein und eine kurze Vorstellung.</p>
     </section>
-<section id="galerie">
-    <h2>Galerie</h2>
-    <div class="gallery">
-        <img src="bilder/Praxis1.jpg" alt="Therapieraum 1">
-        <img src="bilder/Praxis2.jpg" alt="Therapieraum 2">
-        <img src="bilder/Praxis3.jpg" alt="Therapieraum 3">
-    </div>
-</section>
+
+    <!-- Galerie mit Karussell -->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            
+            <div class="carousel">
+                <img src="bilder/Praxis1.jpg" alt="Therapieraum 1">
+                <img src="bilder/Praxis2.jpg" alt="Therapieraum 2">
+                <img src="bilder/Praxis3.jpg" alt="Therapieraum 3">
+            </div>
+
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
 
     <section id="therapie">
         <h2>Therapieangebot</h2>
@@ -47,11 +55,16 @@
 
     <section id="anfahrt">
         <h2>Anfahrt</h2>
-        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5186.766231454009!2d11.089111779801444!3d49.458375308254894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57963b132aeb%3A0x4648b4d88831ccee!2sSulzbacher%20Str.%2035%2C%2090489%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1739016000284!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5186.766231454009!2d11.089111779801444!3d49.458375308254894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57963b132aeb%3A0x4648b4d88831ccee!2sSulzbacher%20Str.%2035%2C%2090489%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1739016000284!5m2!1sde!2sde" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
     </section>
 
     <footer>
         <p>&copy; 2025 Psychotherapie Praxis</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
