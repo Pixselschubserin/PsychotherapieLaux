@@ -1,0 +1,90 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0e6; /* Sanftes Eukalyptusgrün */
+    color: #2F4F4F; /* Moosgrün für die Schrift */
+}
+
+/* Kopfbereich */
+header {
+    background: linear-gradient(135deg, #b5d5c5, #d8e7d8); /* Weicher Farbverlauf in Pastellgrün */
+    color: #2F4F4F;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #A2C3A4; /* Dezentes Moosgrün */
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7EAA92; /* Dunkleres Grün beim Hover */
+}
+
+/* Abschnitte */
+section {
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Abstrakte Formen */
+section::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(162, 195, 164, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(126, 170, 146, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Fußbereich */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #7EAA92;
+    color: white;
+    margin-top: 20px;
+}
