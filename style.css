@@ -90,11 +90,10 @@ footer {
 }
 
 /* Karussell-Styling */
-/* Karussell-Styling */
 .carousel-container {
     position: relative;
     width: 400px; /* Breite des Karussells */
-    height: 300px; /* Feste Höhe für gleichmäßige Darstellung */
+    height: 300px; /* Höhe des Karussells */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -104,15 +103,15 @@ footer {
 /* Bild-Container */
 .carousel {
     display: flex;
+    width: 100%; /* WICHTIG: Verhindert falsche Skalierung */
     transition: transform 0.5s ease-in-out;
-    width: 100%; 
 }
 
-/* Bilder */
+/* Einzelne Bilder */
 .carousel img {
-    width: 100%;  /* Füllt den Container aus */
+    width: 100%;  /* Bild nimmt gesamte Breite des Containers ein */
     height: 100%;
-    object-fit: cover; /* Schneidet das Bild schön zu */
+    object-fit: cover; /* Bild schön zuschneiden */
     border-radius: 10px;
 }
 
