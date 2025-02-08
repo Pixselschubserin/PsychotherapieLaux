@@ -88,3 +88,12 @@ footer {
     color: white;
     margin-top: 20px;
 }
+.gallery img {
+    width: 100%; /* Damit es sich automatisch anpasst */
+    max-width: 300px; /* Maximale Breite auf 300px begrenzen */
+    height: auto; /* Höhe automatisch anpassen */
+    object-fit: cover; /* Schneidet das Bild so zu, dass es gut passt */
+    border-radius: 10px; /* Runde Ecken für eine schöne Optik */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+
