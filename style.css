@@ -140,7 +140,7 @@ footer {
 .header-logo {
     position: fixed; /* Fixiert das Logo an einer Stelle */
     top: 5%; /* Platzierung im oberen Drittel */
-    left: 50%; /* Zentriert das Logo horizontal */
+    left: 20%; /* Zentriert das Logo horizontal */
     transform: translateX(-50%); /* Korrekte Zentrierung */
     width: 40%; /* Größe des Logos, kannst du anpassen */
     opacity: 0.1; /* Halbtransparenz */
