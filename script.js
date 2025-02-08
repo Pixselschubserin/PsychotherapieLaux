@@ -4,7 +4,7 @@ function showSlide(index) {
     const slides = document.querySelectorAll(".carousel img");
     const totalSlides = slides.length;
     const carousel = document.querySelector(".carousel");
-    const slideWidth = document.querySelector(".carousel-container").offsetWidth; // Breite des Karussells abrufen
+    const slideWidth = document.querySelector(".carousel-container").clientWidth; // Breite des Containers abrufen
 
     if (index >= totalSlides) {
         currentIndex = 0; // Zurück zum ersten Bild
@@ -29,5 +29,5 @@ function prevSlide() {
 // Automatisches Weiterscrollen alle 4 Sekunden
 setInterval(nextSlide, 4000);
 
-// Anpassen, falls sich die Fenstergröße ändert
+// Falls sich die Fenstergröße ändert, die Position korrigieren
 window.addEventListener("resize", () => showSlide(currentIndex));
