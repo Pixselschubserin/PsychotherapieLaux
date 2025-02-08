@@ -135,3 +135,15 @@ footer {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Hintergrund-Logo nur im oberen Drittel sichtbar */
+.header-logo {
+    position: fixed; /* Fixiert das Logo an einer Stelle */
+    top: 5%; /* Platzierung im oberen Drittel */
+    left: 50%; /* Zentriert das Logo horizontal */
+    transform: translateX(-50%); /* Korrekte Zentrierung */
+    width: 40%; /* Größe des Logos, kannst du anpassen */
+    opacity: 0.1; /* Halbtransparenz */
+    pointer-events: none; /* Verhindert, dass es anklickbar ist */
+    z-index: -1; /* Stellt sicher, dass es hinter dem Inhalt bleibt */
+}
