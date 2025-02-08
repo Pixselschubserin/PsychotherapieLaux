@@ -20,7 +20,7 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #A2C3A4; /* Dezentes Moosgrün */
+    background-color: #A2C3A4;
     text-align: center;
     margin: 0;
 }
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #7EAA92; /* Dunkleres Grün beim Hover */
+    background-color: #7EAA92;
 }
 
 /* Abschnitte */
@@ -88,18 +88,11 @@ footer {
     color: white;
     margin-top: 20px;
 }
-.gallery img {
-    width: 100%; /* Damit es sich automatisch anpasst */
-    max-width: 300px; /* Maximale Breite auf 300px begrenzen */
-    height: auto; /* Höhe automatisch anpassen */
-    object-fit: cover; /* Schneidet das Bild so zu, dass es gut passt */
-    border-radius: 10px; /* Runde Ecken für eine schöne Optik */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-}
+
 /* Karussell-Styling */
 .carousel-container {
     position: relative;
-    max-width: 600px;
+    max-width: 600px; /* Breite des Karussells */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -107,14 +100,16 @@ footer {
 }
 
 .carousel {
-    display: flex;
+    display: flex; /* Bilder in einer Reihe anordnen */
     transition: transform 0.5s ease-in-out;
 }
 
+/* Korrekte Bildgröße für das Karussell */
 .carousel img {
-    max-width: 15%; /* Bilder nehmen max. 25% der Karussell-Breite ein */
-    height: auto;
-}
+    width: 200px; /* 10 cm */
+    height: auto; /* Höhe passt sich an */
+    flex-shrink: 0;
+    border-radius: 10px;
 }
 
 /* Navigation Buttons */
@@ -137,4 +132,3 @@ footer {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
