@@ -112,10 +112,9 @@ footer {
 }
 
 .carousel img {
-    width: 100%;
+    max-width: 25%; /* Bilder nehmen max. 25% der Karussell-Breite ein */
     height: auto;
-    flex-shrink: 0;
-    border-radius: 10px;
+}
 }
 
 /* Navigation Buttons */
