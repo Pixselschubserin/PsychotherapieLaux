@@ -1,172 +1,120 @@
-/* Importiere die Schriftart */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Einbindung der neuen Schriftarten */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Dancing+Script:wght@500&display=swap');
 
 /* Allgemeine Einstellungen */
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eaf3f4; /* Helles Blau aus der Palette */
-    color: #034f5f; /* Dunkles Blau für den Text */
+    background-color: #e6f0e6; /* Sanftes Eukalyptusgrün */
+    color: #2F4F4F; /* Moosgrün für die Schrift */
 }
 
 /* Kopfbereich */
 header {
-    background: linear-gradient(135deg, #76b5ac, #eaf3f4); /* Sanfter Farbverlauf */
-    color: #034f5f;
+    background: linear-gradient(135deg, #b5d5c5, #d8e7d8); /* Weicher Farbverlauf in Pastellgrün */
+    color: #2F4F4F;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Begrüßungstext mit Handschrift */
+.welcome-text {
+    font-family: 'Dancing Script', cursive;
     font-size: 32px;
-    letter-spacing: 2px;
+    font-weight: 500;
+    color: #2F4F4F;
+    text-align: center;
 }
 
 /* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #76b5ac; /* Grünton aus der Palette */
+    background-color: #A2C3A4;
     text-align: center;
     margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 12px;
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 12px 24px;
-    font-size: 20px;
-    border-radius: 25px;
-    transition: background 0.3s ease-in-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    font-weight: 400;
 }
 
 nav ul li a:hover {
-    background-color: #d89781; /* Warme Kontrastfarbe */
+    background-color: #7EAA92;
 }
 
 /* Abschnitte */
 section {
-    padding: 40px;
-    max-width: 900px;
-    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-}
-
-/* Abstrakte Formen */
-section::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 130px;
-    height: 130px;
-    background-color: rgba(118, 181, 172, 0.3);
-    border-radius: 50%;
-    z-index: -1;
-}
-
-section::after {
-    content: '';
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 130px;
-    height: 130px;
-    background-color: rgba(216, 151, 129, 0.3);
-    border-radius: 50%;
-    z-index: -1;
+    font-weight: 300; /* Montserrat Light für Fließtext */
 }
 
 /* Fußbereich */
 footer {
     text-align: center;
-    padding: 18px;
-    background-color: #d89781;
+    padding: 15px;
+    background-color: #7EAA92;
     color: white;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* Karussell-Styling */
 .carousel-container {
     position: relative;
-    width: 450px;
-    height: 320px;
+    width: 400px;
+    height: 300px;
     margin: auto;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Bild-Container */
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Einzelne Bilder */
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-/* Navigation Buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    cursor: pointer;
-    font-size: 26px;
-    border-radius: 50%;
-}
-
-.prev { left: 12px; }
-.next { right: 12px; }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Hintergrund-Logo nur im oberen Drittel sichtbar */
 .header-logo {
     position: fixed;
     top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
-    opacity: 0.15;
+    left: 20%;
+    transform: translateX(-20%);
+    width: 40%;
+    opacity: 0.1;
     pointer-events: none;
     z-index: -1;
 }
 
-/* Über mich */
 .ueber-mich-container {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .ueber-mich-container img {
-    width: 280px;
+    width: 250px;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ueber-mich-text {
     flex: 1;
-    font-size: 20px;
-    line-height: 1.6;
 }
