@@ -155,7 +155,7 @@ footer {
 }
 
 .ueber-mich-container img {
-    width: 150px; /* Größe des Bildes anpassen */
+    width: 250px; /* Größe des Bildes anpassen */
     height: auto; /* Höhe proportional anpassen */
     border-radius: 10px; /* Optional: Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Leichter Schatten für mehr Eleganz */
