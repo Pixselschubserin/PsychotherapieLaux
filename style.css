@@ -147,3 +147,20 @@ footer {
     pointer-events: none; /* Verhindert, dass es anklickbar ist */
     z-index: -1; /* Stellt sicher, dass es hinter dem Inhalt bleibt */
 }
+
+.ueber-mich-container {
+    display: flex; /* Setzt Bild und Text nebeneinander */
+    align-items: center; /* Vertikale Ausrichtung */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.ueber-mich-container img {
+    width: 150px; /* Größe des Bildes anpassen */
+    height: auto; /* Höhe proportional anpassen */
+    border-radius: 10px; /* Optional: Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Leichter Schatten für mehr Eleganz */
+}
+
+.ueber-mich-text {
+    flex: 1; /* Text nimmt den restlichen Platz ein */
+}
