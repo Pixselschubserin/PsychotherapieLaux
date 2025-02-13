@@ -181,43 +181,43 @@ footer {
 .faq-container {
         max-width: 800px;
         margin: auto;
-    }
-    
-    .faq-item {
-        border-bottom: 1px solid #ddd;
-        padding: 10px 0;
-    }
+}
 
-    .faq-question {
-        width: 100%;
-        background: none;
-        border: none;
-        text-align: left;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
 
-    .faq-answer {
-        display: none;
-        padding: 10px;
-        font-size: 16px;
-    }
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .arrow {
-        font-size: 18px;
-        transition: transform 0.3s ease;
-    }
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+}
 
-    .faq-item.active .faq-answer {
-        display: block;
-    }
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
 
-    .faq-item.active .arrow {
-        transform: rotate(180deg);
-    }
-</style>
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
