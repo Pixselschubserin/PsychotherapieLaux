@@ -22,7 +22,7 @@ header {
 
 /* Begrüßungstext mit Handschrift */
 .welcome-text {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script';
     font-size: 2.5rem; /* Angepasste Größe */
     text-align: center;
     font-weight: bold;
