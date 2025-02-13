@@ -118,3 +118,18 @@ footer {
 .ueber-mich-text {
     flex: 1;
 }
+.welcome-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem; /* Passe die Größe an */
+    text-align: center;
+    font-weight: bold;
+    color: #2F4F4F; /* Deine bestehende Farbpalette */
+    margin-bottom: 10px;
+}
+
+.welcome-text span {
+    display: block; /* Bringt die zweite Zeile nach unten */
+    font-size: 1.5rem; /* Kleinere Schriftgröße für Unterzeile */
+    font-family: 'Montserrat', sans-serif; /* Seriöse Schriftart */
+    font-weight: lighter;
+}
