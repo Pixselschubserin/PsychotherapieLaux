@@ -23,10 +23,18 @@ header {
 /* Begrüßungstext mit Handschrift */
 .welcome-text {
     font-family: 'Dancing Script', cursive;
-    font-size: 32px;
-    font-weight: 500;
-    color: #2F4F4F;
+    font-size: 2.5rem; /* Angepasste Größe */
     text-align: center;
+    font-weight: bold;
+    color: #2F4F4F; /* Bestehende Farbpalette */
+    margin-bottom: 10px;
+}
+
+.welcome-text span {
+    display: block; /* Bringt die zweite Zeile nach unten */
+    font-size: 1.5rem; /* Kleinere Schriftgröße für Unterzeile */
+    font-family: 'Montserrat', sans-serif; /* Seriöse Schriftart */
+    font-weight: lighter;
 }
 
 /* Navigation */
@@ -102,10 +110,12 @@ footer {
     z-index: -1;
 }
 
+/* Über mich Bereich */
 .ueber-mich-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Bilder und Text sauber ausrichten */
     gap: 20px;
+    flex-wrap: wrap; /* Falls der Bildschirm zu klein ist, wird umgebrochen */
 }
 
 .ueber-mich-container img {
@@ -117,22 +127,10 @@ footer {
 
 .ueber-mich-text {
     flex: 1;
-}
-.welcome-text {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem; /* Passe die Größe an */
-    text-align: center;
-    font-weight: bold;
-    color: #2F4F4F; /* Deine bestehende Farbpalette */
-    margin-bottom: 10px;
+    min-width: 300px;
 }
 
-.welcome-text span {
-    display: block; /* Bringt die zweite Zeile nach unten */
-    font-size: 1.5rem; /* Kleinere Schriftgröße für Unterzeile */
-    font-family: 'Montserrat', sans-serif; /* Seriöse Schriftart */
-    font-weight: lighter;
-}
+/* Info-Tabelle */
 .info-table {
     max-width: 800px;
     margin: 40px auto;
@@ -164,4 +162,18 @@ footer {
     width: 30%;
     color: #2F4F4F; /* Moosgrün */
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Anfahrt */
+#anfahrt {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#anfahrt iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
