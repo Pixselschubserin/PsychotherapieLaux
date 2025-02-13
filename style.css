@@ -133,3 +133,35 @@ footer {
     font-family: 'Montserrat', sans-serif; /* Seriöse Schriftart */
     font-weight: lighter;
 }
+.info-table {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 12px 20px;
+    vertical-align: top;
+}
+
+.cell.title {
+    font-weight: bold;
+    width: 30%;
+    color: #2F4F4F; /* Moosgrün */
+    font-family: 'Montserrat', sans-serif;
+}
