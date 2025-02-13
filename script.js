@@ -32,16 +32,14 @@ setInterval(nextSlide, 4000);
 // Falls sich die Fenstergröße ändert, die Position korrigieren
 window.addEventListener("resize", () => showSlide(currentIndex));
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const faqItems = document.querySelectorAll(".faq-item");
+document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-item");
 
-        faqItems.forEach((item) => {
-            const question = item.querySelector(".faq-question");
+    faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
 
             question.addEventListener("click", () => {
                 item.classList.toggle("active");
             });
         });
     });
-</script>
