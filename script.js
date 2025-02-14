@@ -27,13 +27,13 @@ function prevSlide() {
 }
 
 // Automatisches Weiterscrollen alle 4 Sekunden
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 3000);
 
 // Falls sich die Fenstergröße ändert, die Position korrigieren
 window.addEventListener("resize", () => showSlide(currentIndex));
 
 document.addEventListener("DOMContentLoaded", function () {
-    const faqItems = document.querySelectorAll(".faq-item");
+    const faqItems = document.querySelectorAll("h3");
 
     faqItems.forEach((item) => {
     const question = item.querySelector("h3");
