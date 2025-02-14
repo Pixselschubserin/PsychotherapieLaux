@@ -226,3 +226,31 @@ footer {
     height: auto;
     object-fit: cover;
 }
+header {
+    display: flex;
+    justify-content: center; /* Zentriert die Inhalte horizontal */
+    align-items: center; /* Richtet Logo und Text vertikal aus */
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Richtet Logo und Text auf gleicher Höhe aus */
+    gap: 15px; /* Abstand zwischen Logo und Text */
+}
+
+.header-logo {
+    height: 100px; /* Standardhöhe für das Logo */
+    width: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+
+.welcome-text {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.welcome-text span {
+    display: block;
+    font-size: 1.2rem;
+}
