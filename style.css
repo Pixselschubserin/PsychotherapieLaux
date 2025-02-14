@@ -237,11 +237,6 @@ header {
     gap: 15px; /* Abstand zwischen Logo und Text */
 }
 
-.header-logo {
-    height: 100px; /* Standardhöhe für das Logo */
-    width: auto; /* Beibehaltung des Seitenverhältnisses */
-}
-
 .welcome-text {
     font-size: 1.8rem;
     line-height: 1.2;
