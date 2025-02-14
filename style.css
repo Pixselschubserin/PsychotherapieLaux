@@ -98,16 +98,6 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-logo {
-    height: 100px;
-    width: auto;
-    display: block; /* Stellt sicher, dass das Bild als Blockelement dargestellt wird */
-    position: relative; /* Entfernt das fixed-Positioning */
-    opacity: 1; /* Stellt sicher, dass das Logo sichtbar ist */
-    z-index: 10; /* Bringt das Logo in den Vordergrund */
-
-}
-
 /* Über mich Bereich */
 .ueber-mich-container {
     display: flex;
@@ -246,4 +236,12 @@ header {
 .welcome-text span {
     display: block;
     font-size: 1.2rem;
+}
+.header-logo {
+    height: 100px; /* Standardhöhe */
+    width: auto;
+    display: block;
+    position: relative; /* Verhindert Überlagerungsprobleme */
+    opacity: 1; /* Stellt sicher, dass das Logo sichtbar ist */
+    z-index: 10; /* Bringt es in den Vordergrund */
 }
